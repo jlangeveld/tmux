@@ -19,14 +19,12 @@ set -g status-bg colour233
 set -g status-left-bg colour233
 set -g status-left-fg colour243
 set -g status-left-length 40
-# set -g status-left "#[fg=colour233,bg=colour130,bold] #S #[fg=colour130,bg=colour240]#[fg=colour233,bg=colour240] #(whoami) #[fg=colour240,bg=colour235]#[fg=colour240,bg=colour235] #I:#P #[fg=colour235,bg=colour233,nobold]"
-set -g status-left "#[fg=colour233,bg=colour130,bold] #S #[fg=colour130,bg=colour240]#[fg=colour233,bg=colour240] #I:#P #[fg=colour240,bg=colour233,nobold]"
+set -g status-left "#[fg=colour233,bg=colour130,bold] #S #[fg=colour130,bg=colour233,bold]"
 
 # Right side of status bar
 set -g status-right-bg colour233
 set -g status-right-fg colour243
-set -g status-right-length 150
-set -g status-right "#{prefix_highlight} #[fg=colour235,bg=colour233]#[fg=colour240,bg=colour235] %d-%b #[fg=colour240,bg=colour235]#[fg=colour233,bg=colour240] %H:%M #[fg=colour130,bg=colour240]#[fg=colour233,bg=colour130,bold] #H "
+set -g status-right "#{prefix_highlight} #[fg=colour130,bg=colour233]#[fg=colour233,bg=colour130,bold] #I:#P "
 
 
 # Prefix_highlight
