@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 set -e
-$BUILD_ROOT/logit.sh
+source $BUILD_ROOT/logit.sh
 logit tmux prefix_highlight
 
 # Place holder for status left/right
