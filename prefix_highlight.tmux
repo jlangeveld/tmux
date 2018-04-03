@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
 set -e
-source $BUILD_ROOT/logit.sh
-logit tmux prefix_highlight
 
 # Place holder for status left/right
 place_holder="\#{prefix_highlight}"
@@ -24,7 +22,6 @@ default_fg='colour231'
 default_bg='colour04'
 
 tmux_option() {
-	logit tmux_option
     local -r value=$(tmux show-option -gqv "$1")
     local -r default="$2"
 
@@ -36,7 +33,6 @@ tmux_option() {
 }
 
 highlight() {
-	logit highlight
     local -r \
         status="$1" \
         prefix="$2" \
@@ -79,7 +75,6 @@ highlight() {
 }
 
 main() {
-	logit main
     local -r \
         prefix=$(tmux_option prefix) \
 		default_attr=$(tmux_option "$default_attr_config" "fg=$default_fg,bg=$default_bg") \
