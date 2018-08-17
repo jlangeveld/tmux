@@ -19,23 +19,21 @@ set -g status-bg colour233
 set -g status-left-bg colour233
 set -g status-left-fg colour243
 set -g status-left-length 40
-set -g status-left "#[fg=colour233,bg=colour130,bold] #S #[fg=colour130,bg=colour233,bold]"
+set -g status-left "#[fg=colour233,bg=colour130,bold] #S "
 
 # Right side of status bar
 set -g status-right-bg colour233
 set -g status-right-fg colour243
-set -g status-right "#{prefix_highlight} #[fg=colour240,bg=colour233]#[fg=colour233,bg=colour240] #H #[fg=colour130,bg=colour240]#[fg=colour233,bg=colour130,bold] #I:#P "
+set -g status-right "#{prefix_highlight} #[fg=colour233,bg=colour240] #H #[fg=colour233,bg=colour130,bold] #I:#P "
 
 
 # Prefix_highlight
-set -g @prefix_highlight_output_prefix ""
-set -g @prefix_highlight_output_suffix ""
 set -g @prefix_highlight_prefix_attr fg=colour130,bg=colour233,bold
 set -g @prefix_highlight_default_attr fg=colour233,bg=colour130,bold
 
 # Window status
 set -g window-status-format "  #I:#W#F  "
-set -g window-status-current-format "#[fg=colour233,bg=black]#[fg=colour166,nobold] #I:#W#F #[fg=colour233,bg=black,nobold]"
+set -g window-status-current-format "#[fg=colour166,bg=black,nobold] #I:#W#F"
 
 # Current window status
 set -g window-status-current-bg colour130
