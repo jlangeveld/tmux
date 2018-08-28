@@ -24,7 +24,7 @@ set -g status-left "#[fg=colour233,bg=colour130,bold] #S "
 # Right side of status bar
 set -g status-right-bg colour233
 set -g status-right-fg colour243
-set -g status-right "#{prefix_highlight} #[fg=colour240,bg=colour233] #H #[fg=colour233,bg=colour130,bold] #I:#P "
+set -g status-right "#{prefix_highlight} #[fg=colour240,bg=colour233] #H #{cpu_fg_color} #{cpu_icon} #[fg=colour233,bg=colour130,bold] #I:#P "
 
 
 # Prefix_highlight
